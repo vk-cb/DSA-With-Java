@@ -23,7 +23,6 @@ public class Fibonacci {
         else{
             System.out.println("Invalid input. Please enter a positive integer.");
         }
-        System.out.println();
 
     }
 }
