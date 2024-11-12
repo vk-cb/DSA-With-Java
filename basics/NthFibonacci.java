@@ -6,7 +6,13 @@ public class NthFibonacci {
         System.out.print("Enter the nth term: ");
         int nthterm = in.nextInt();
         in.close();
-        System.out.println("The " + nthterm + "th term of the Fibonacci sequence is: " + fibonacci(nthterm));
+        if(fibonacci(nthterm)==-1){
+            System.out.println("Invalid input. Please enter a positive integer.");
+            return;
+        }
+        else{
+            System.out.println("The " + nthterm + "th term of the Fibonacci sequence is: " + fibonacci(nthterm));
+        }
     }
     static int fibonacci(int nterm) {
         int a = 0, b= 1, next;
