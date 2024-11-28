@@ -15,6 +15,6 @@ public class EvenDigit {
             count++;
             num /= 10;
         }
-        return count % 2 == 0;
+        return count % 2 == 0;-
     }
 }
