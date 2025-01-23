@@ -1,6 +1,6 @@
 public class Pattern3 {
     public static void main(String[] args) {
-        PatternFunction8(4);
+        PatternFunction10(4);
     }
     static void PatternFunction3(int row){
        
@@ -72,6 +72,34 @@ public class Pattern3 {
             }
            // print star
             for (int j = 1; j <=i*2-1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void PatternFunction9(int row){
+     
+        for (int i = 1; i <=row; i++) {
+           // print space
+            for (int j = 1; j <=i; j++) {
+                System.out.print(" ");
+            }
+           // print star
+            for (int j = 1; j <=(row-i+1)*2-1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void PatternFunction10(int row){
+     
+        for (int i = 1; i <=row; i++) {
+           // print space
+            for (int j = 1; j <=i; j++) {
+                System.out.print(" ");
+            }
+           // print star
+            for (int j = 1; j <=(row-i+1)*2-1; j++) {
                 System.out.print("*");
             }
             System.out.println();
